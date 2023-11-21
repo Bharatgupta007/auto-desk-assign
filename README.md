@@ -102,3 +102,15 @@ GET localhost:8080/reply/helloworld
     message: "helloword"
 }
 ```
+
+
+## Bharat Changes
+
+a). I have added another class for Controller "v2" endpoint.
+b). Over there I have called "manipulate" function, which I have created in Service class.
+c). Inside Service class, I have created two private function i.e. 1). encode   2). reverse
+d). I have created Response DTO which is returning "data" as a key when success (200) and "message" as a key when failure (400).
+e). Added null pointer exception checks
+f). Added test cases.
+
+Inside Controller, I have commented the first approach, which came into my mind as we can have only 4 cases i.e "11", "12", "21", "22".
