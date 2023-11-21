@@ -1,3 +1,15 @@
+## Bharat Changes
+
+- I have added another class for Controller "v2" endpoint.
+- Over there I have called "manipulate" function, which I have created in Service class.
+- Inside Service class, I have created two private function i.e. 1. encode   2. reverse
+- I have created Response DTO which is returning "data" as a key when success (200) and "message" as a key when failure (400).
+- Added null pointer exception checks
+- Added test cases.
+
+Inside Controller, I have commented the first approach, which came into my mind as we can have only 4 cases i.e "11", "12", "21", "22".
+
+
 # Your Task
 Our company has released a beta version of **String Reply Service** and it has been a huge success.
 In the current implementation (as part of boilerplate code), the **String Reply Service** takes in an input string (in the format of `[a-z0-9]*`)
@@ -104,13 +116,3 @@ GET localhost:8080/reply/helloworld
 ```
 
 
-## Bharat Changes
-
-- I have added another class for Controller "v2" endpoint.
-- Over there I have called "manipulate" function, which I have created in Service class.
-- Inside Service class, I have created two private function i.e. 1. encode   2. reverse
-- I have created Response DTO which is returning "data" as a key when success (200) and "message" as a key when failure (400).
-- Added null pointer exception checks
-- Added test cases.
-
-Inside Controller, I have commented the first approach, which came into my mind as we can have only 4 cases i.e "11", "12", "21", "22".
